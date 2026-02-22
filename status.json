@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-22T05:05:00Z",
+  "updated_at": "2026-02-22T05:15:00Z",
   "members": [
     {
       "name": "Jarvis",
@@ -7,15 +7,15 @@
       "role": "Project Manager + Personal Assistant",
       "status": "working",
       "status_label": "Coordinating",
-      "now": "Orchestrating Plan B build, review flow, and progress pulses."
+      "now": "Running Team Pulse and aligning Plan B execution cadence."
     },
     {
       "name": "Elon",
       "emoji": "🧠",
       "role": "Engineering Manager (Strategist)",
       "status": "planning",
-      "status_label": "Planning",
-      "now": "Driving milestone plan, risk controls, and execution sequencing."
+      "status_label": "Review Gate",
+      "now": "Enforcing incremental-commit PR workflow and review checkpoints."
     },
     {
       "name": "Ali",
@@ -23,7 +23,7 @@
       "role": "Developer (Builder)",
       "status": "working",
       "status_label": "Shipping",
-      "now": "Building campaign intake + Trello sync + scoring pipeline modules."
+      "now": "Scoring engine v1 shipped; moving to next pipeline modules."
     },
     {
       "name": "Mo",
@@ -31,7 +31,7 @@
       "role": "Founder / Operator",
       "status": "active",
       "status_label": "Decision Layer",
-      "now": "Setting direction, constraints, and deadline-driven priorities."
+      "now": "Setting constraints and approvals for fast, quality delivery."
     }
   ]
 }
