@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-22T09:30:00Z",
+  "updated_at": "2026-02-22T11:00:00Z",
   "members": [
     {
       "name": "Jarvis",
@@ -7,7 +7,7 @@
       "role": "Project Manager + Personal Assistant",
       "status": "working",
       "status_label": "Coordinating",
-      "now": "Running Team Pulse refresh and review cadence."
+      "now": "Running Team Pulse refresh and enforcing review cadence."
     },
     {
       "name": "Elon",
@@ -15,7 +15,7 @@
       "role": "Engineering Manager (Strategist)",
       "status": "planning",
       "status_label": "Review Gate",
-      "now": "Holding incremental-commit review gate before merge."
+      "now": "Holding review gate for Ali branch before merge to main."
     },
     {
       "name": "Ali",
@@ -23,7 +23,7 @@
       "role": "Developer (Builder)",
       "status": "working",
       "status_label": "Ready for Review",
-      "now": "Shipped Trello sync MVP + intake schema v1; awaiting review/merge."
+      "now": "Completed compliance checklist + review template on branch; awaiting review/merge."
     },
     {
       "name": "Mo",
@@ -31,7 +31,7 @@
       "role": "Founder / Operator",
       "status": "active",
       "status_label": "Decision Layer",
-      "now": "Providing constraints and approvals to keep pace high."
+      "now": "Providing constraints/approvals to keep delivery velocity high."
     }
   ]
 }
