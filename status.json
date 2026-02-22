@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-22T07:00:00Z",
+  "updated_at": "2026-02-22T09:00:00Z",
   "members": [
     {
       "name": "Jarvis",
@@ -7,7 +7,7 @@
       "role": "Project Manager + Personal Assistant",
       "status": "working",
       "status_label": "Coordinating",
-      "now": "Running Team Pulse and tracking Plan B delivery cadence."
+      "now": "Refreshing Team Pulse and tracking Plan B handoff cadence."
     },
     {
       "name": "Elon",
@@ -15,7 +15,7 @@
       "role": "Engineering Manager (Strategist)",
       "status": "planning",
       "status_label": "Review Gate",
-      "now": "Holding PR gate and incremental-commit standards for current branch work."
+      "now": "Maintaining incremental-commit review gate before merge."
     },
     {
       "name": "Ali",
@@ -23,7 +23,7 @@
       "role": "Developer (Builder)",
       "status": "working",
       "status_label": "Shipping",
-      "now": "Trello sync MVP scaffold + tests/docs shipped on branch; preparing next pipeline step."
+      "now": "Shipped Trello sync MVP and campaign intake schema v1; preparing next step."
     },
     {
       "name": "Mo",
@@ -31,7 +31,7 @@
       "role": "Founder / Operator",
       "status": "active",
       "status_label": "Decision Layer",
-      "now": "Setting constraints and approvals for fast, quality delivery."
+      "now": "Providing constraints/approvals to keep delivery speed and quality high."
     }
   ]
 }
