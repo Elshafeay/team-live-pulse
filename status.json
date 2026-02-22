@@ -1,0 +1,37 @@
+{
+  "updated_at": "2026-02-22T05:05:00Z",
+  "members": [
+    {
+      "name": "Jarvis",
+      "emoji": "🤖",
+      "role": "Project Manager + Personal Assistant",
+      "status": "working",
+      "status_label": "Coordinating",
+      "now": "Orchestrating Plan B build, review flow, and progress pulses."
+    },
+    {
+      "name": "Elon",
+      "emoji": "🧠",
+      "role": "Engineering Manager (Strategist)",
+      "status": "planning",
+      "status_label": "Planning",
+      "now": "Driving milestone plan, risk controls, and execution sequencing."
+    },
+    {
+      "name": "Ali",
+      "emoji": "🛠️",
+      "role": "Developer (Builder)",
+      "status": "working",
+      "status_label": "Shipping",
+      "now": "Building campaign intake + Trello sync + scoring pipeline modules."
+    },
+    {
+      "name": "Mo",
+      "emoji": "👑",
+      "role": "Founder / Operator",
+      "status": "active",
+      "status_label": "Decision Layer",
+      "now": "Setting direction, constraints, and deadline-driven priorities."
+    }
+  ]
+}

@@ -22,41 +22,37 @@
 <body>
   <div class="wrap">
     <h1>Team Pulse</h1>
-    <p>Real-time-ish snapshot of who’s doing what.</p>
-
-    <div class="grid">
-      <div class="card">
-        <div class="name">🤖 Jarvis</div>
-        <div class="role">Project Manager + Personal Assistant</div>
-        <span class="status work">Coordinating</span>
-        <div class="task"><strong>Now:</strong> Orchestrating Plan B, tracking PR flow, and running progress pulse cadence.</div>
-      </div>
-
-      <div class="card">
-        <div class="name">🧠 Elon</div>
-        <div class="role">Engineering Manager (Strategist)</div>
-        <span class="status work">Planning</span>
-        <div class="task"><strong>Now:</strong> Refining execution blueprint, milestones, and risk controls for sustainable delivery.</div>
-      </div>
-
-      <div class="card">
-        <div class="name">🛠️ Ali</div>
-        <div class="role">Developer (Builder)</div>
-        <span class="status work">Shipping</span>
-        <div class="task"><strong>Now:</strong> Building scoring engine + automation modules, then opening PRs for review.</div>
-      </div>
-
-      <div class="card">
-        <div class="name">👑 Mo</div>
-        <div class="role">Founder / Operator</div>
-        <span class="status ok">Decision Layer</span>
-        <div class="task"><strong>Now:</strong> Setting direction, approving constraints, and steering priorities.</div>
-      </div>
-    </div>
-
-    <div class="meta">
-      Tip: edit <code>index.html</code> to update statuses anytime. Hosted on GitHub Pages.
-    </div>
+    <p>Live snapshot of who’s doing what. Auto-refreshes every 60s.</p>
+    <div id="grid" class="grid"></div>
+    <div class="meta" id="meta">Loading status...</div>
   </div>
+
+<script>
+const statusClass = (s='working') => ({active:'ok',working:'work',blocked:'block',planning:'work'}[s] || 'work');
+
+async function loadStatus(){
+  try {
+    const res = await fetch(`status.json?t=${Date.now()}`);
+    const data = await res.json();
+    const grid = document.getElementById('grid');
+    grid.innerHTML = data.members.map(m => `
+      <div class="card">
+        <div class="name">${m.emoji || '•'} ${m.name}</div>
+        <div class="role">${m.role}</div>
+        <span class="status ${statusClass(m.status)}">${m.status_label || m.status}</span>
+        <div class="task"><strong>Now:</strong> ${m.now}</div>
+      </div>
+    `).join('');
+
+    document.getElementById('meta').innerHTML =
+      `Last update: <code>${data.updated_at}</code> · Source: <code>status.json</code>`;
+  } catch (e) {
+    document.getElementById('meta').textContent = 'Status feed unavailable right now.';
+  }
+}
+
+loadStatus();
+setInterval(loadStatus, 60000);
+</script>
 </body>
 </html>
