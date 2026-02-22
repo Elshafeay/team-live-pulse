@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mo x Jarvis — Team Pulse</title>
+  <style>
+    :root { --bg:#0b1020; --card:#121a33; --text:#eaf0ff; --muted:#9fb1d9; --ok:#17c964; --work:#f5a524; --block:#f31260; }
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(160deg,#0b1020,#111a38);color:var(--text)}
+    .wrap{max-width:980px;margin:40px auto;padding:0 16px}
+    h1{margin:0 0 8px;font-size:34px} p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:22px}
+    .card{background:var(--card);border:1px solid #23315f;border-radius:16px;padding:16px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+    .name{font-size:20px;font-weight:700}.role{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .status{display:inline-block;padding:5px 10px;border-radius:999px;font-size:12px;font-weight:700}
+    .ok{background:rgba(23,201,100,.16);color:var(--ok)} .work{background:rgba(245,165,36,.16);color:var(--work)} .block{background:rgba(243,18,96,.16);color:var(--block)}
+    .task{margin-top:10px;font-size:14px;line-height:1.4}
+    .meta{margin-top:28px;font-size:12px;color:var(--muted)}
+    code{background:#1b2752;padding:2px 6px;border-radius:6px;color:#c8d6ff}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Team Pulse</h1>
+    <p>Real-time-ish snapshot of who’s doing what.</p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="name">🤖 Jarvis</div>
+        <div class="role">Project Manager + Personal Assistant</div>
+        <span class="status work">Coordinating</span>
+        <div class="task"><strong>Now:</strong> Orchestrating Plan B, tracking PR flow, and running progress pulse cadence.</div>
+      </div>
+
+      <div class="card">
+        <div class="name">🧠 Elon</div>
+        <div class="role">Engineering Manager (Strategist)</div>
+        <span class="status work">Planning</span>
+        <div class="task"><strong>Now:</strong> Refining execution blueprint, milestones, and risk controls for sustainable delivery.</div>
+      </div>
+
+      <div class="card">
+        <div class="name">🛠️ Ali</div>
+        <div class="role">Developer (Builder)</div>
+        <span class="status work">Shipping</span>
+        <div class="task"><strong>Now:</strong> Building scoring engine + automation modules, then opening PRs for review.</div>
+      </div>
+
+      <div class="card">
+        <div class="name">👑 Mo</div>
+        <div class="role">Founder / Operator</div>
+        <span class="status ok">Decision Layer</span>
+        <div class="task"><strong>Now:</strong> Setting direction, approving constraints, and steering priorities.</div>
+      </div>
+    </div>
+
+    <div class="meta">
+      Tip: edit <code>index.html</code> to update statuses anytime. Hosted on GitHub Pages.
+    </div>
+  </div>
+</body>
+</html>
